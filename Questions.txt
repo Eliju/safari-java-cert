@@ -1,0 +1,9 @@
+Q1) Which are legal declarations:
+
+a) static var x = 99;
+b) private var y = "Hello";
+c) var t = LocalDate.now();
+d) var q;
+e) var s = "Long String";
+
+
