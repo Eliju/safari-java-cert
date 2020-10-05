@@ -34,12 +34,17 @@ Q3) Given:
 class X {
   int x;
   X(int x) {
+// COMPILER ADDS
+    super();
+   
     this.x = x;
   }
 }
 and:
 class Y extends X {
   Y(int x) {
+    // COMPILER ADDS
+    super(); // NOWHERE TO GO!!!
   }
 }
 and:
