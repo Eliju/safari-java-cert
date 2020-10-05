@@ -19,8 +19,8 @@ and:
         X b = new X();
         a.setVal(120);
         System.out.print(a.value + ", ");
-        b.MAX_VAL = 150;
-        a.setVal(140);
+        b.MAX_VAL = 150; // LEGAL!!! (is this a design bug)
+        a.setVal(140); 
         System.out.println(a.value);
 
 What is the result?
