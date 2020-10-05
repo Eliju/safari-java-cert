@@ -30,3 +30,25 @@ What is the result?
     D) Compilation failure
     E) Exception at runtime
 
+Q3) Given:
+class X {
+  int x;
+  X(int x) {
+    this.x = x;
+  }
+}
+and:
+class Y extends X {
+  Y(int x) {
+  }
+}
+and:
+  X x = new Y(3); // line 1
+  System.out.println(x.x);
+  What is the result?
+A) 3
+B) 0
+C) Compilation fails at line 1
+D) Compilation fails for class Y
+E) Runtime exception
+
