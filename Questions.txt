@@ -57,3 +57,59 @@ C) Compilation fails at line 1
 D) Compilation fails for class Y
 E) Runtime exception
 
+Q4) Given
+    class Y {
+        static String sayHi() { return "Y-Hello"; }
+        String sayHi2() { return "Y-Hello2"; }
+    }
+
+     class Z extends Y {
+        static String sayHi() { return "Z-Hello"; }
+        String sayHi2() { return "Z-Hello2"; }
+    }
+
+Y y = new Z();
+System.out.println(y.sayHi() + ", " + y.sayHi2());
+
+What is the result?
+    A) Y-Hello, Y-Hello2
+    B) Y-Hello, Z-Hello2
+    C) Z-Hello, Z-Hello2
+    D) Z-Hello, Y-Hello2
+    E) Compilation fails
+
+Q5) Given:
+    class Base {
+        void doBaseStuff() {
+            System.out.println("doBaseStuff");
+        }
+    }
+    class Sub extends Base {
+        void doBaseStuff() {
+            System.out.println("doSubStuff");
+        }
+        void doOtherStuff() {
+            System.out.println("doOtherStuff");
+        }
+    }
+and:
+    Base b = new Sub();
+    b.doOtherStuff();
+
+    What is the result?
+    A) doSubStuff
+    B) doOtherStuff
+    C) doBaseStuff
+    D) Exception at runtime
+    E) Compilation failure
+ 
+Q6) 
+Base b = new Sub();
+((StringBuilder)b).concat("x");
+
+    What is the result?
+    A) doSubStuff
+    B) doOtherStuff
+    C) doBaseStuff
+    D) Exception at runtime
+    E) Compilation failure
