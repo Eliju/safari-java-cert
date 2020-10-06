@@ -153,3 +153,16 @@ B) doBaseStuff in Sub may become Object doBaseStuff() {...}
 C) doBaseStuff in Base may become String doBaseStuff() {...}
 D) doBaseStuff in Base may become Object doBaseStuff() {...}
 E) getValue in Sub may become int getValue() {...}
+
+Q9)     Given:
+
+        StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb2 = sb1;
+        sb1 = null;
+
+Which is true?
+    A) sb1 is unreferenced and eligible for GC
+    B) sb1 and sb2 are unreferenced and eligible for GC
+    C) No objects are eligible for GC
+
+
