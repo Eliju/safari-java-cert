@@ -132,4 +132,4 @@ Which are true?
 A) doBaseStuff in Sub may be marked public without causing error
 B) doBaseStuff in Sub may be marked private without causing error
 C) doBaseStuff in Base may be marked public without causing error
-D) doBaseStuff in Sub may be marked private without causing error
+D) doBaseStuff in Base may be marked private without causing error
