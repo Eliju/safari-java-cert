@@ -133,3 +133,23 @@ A) doBaseStuff in Sub may be marked public without causing error
 B) doBaseStuff in Sub may be marked private without causing error
 C) doBaseStuff in Base may be marked public without causing error
 D) doBaseStuff in Base may be marked private without causing error
+
+Q8) Given:
+    class Base {
+        CharSequence doBaseStuff() {
+            return "doBaseStuff";
+        }
+	long getValue() { return 1; }
+    }
+    class Sub extends Base {
+        CharSequence doBaseStuff() {
+            return "doSubStuff";
+        }
+	long getValue() { return 1; }
+    }
+Which are valid?
+A) doBaseStuff in Sub may become String doBaseStuff() {...}
+B) doBaseStuff in Sub may become Object doBaseStuff() {...}
+C) doBaseStuff in Base may become String doBaseStuff() {...}
+D) doBaseStuff in Base may become Object doBaseStuff() {...}
+E) getValue in Sub may become int getValue() {...}
