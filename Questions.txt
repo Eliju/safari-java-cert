@@ -113,3 +113,23 @@ Base b = new Sub();
     C) doBaseStuff
     D) Exception at runtime
     E) Compilation failure
+
+Q7) Given:
+    class Base {
+        void doBaseStuff() {
+            System.out.println("doBaseStuff");
+        }
+    }
+    class Sub extends Base {
+        void doBaseStuff() {
+            System.out.println("doSubStuff");
+        }
+        void doOtherStuff() {
+            System.out.println("doOtherStuff");
+        }
+    }
+Which are true?
+A) doBaseStuff in Sub may be marked public without causing error
+B) doBaseStuff in Sub may be marked private without causing error
+C) doBaseStuff in Base may be marked public without causing error
+D) doBaseStuff in Sub may be marked private without causing error
